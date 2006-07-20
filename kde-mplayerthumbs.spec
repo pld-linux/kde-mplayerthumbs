@@ -1,5 +1,5 @@
-Summary:	MPlayerThumbs is a thumbnail generator for video files on Konqueror
-Summary(pl):	MPlayerThumbs jest programem generuj±cym miniatury dla plików video w Konquerorze
+Summary:	MPlayerThumbs - a thumbnail generator for video files on Konqueror
+Summary(pl):	MPlayerThumbs - program generuj±cy miniatury dla plików video w Konquerorze
 Name:		kde-mplayerthumbs
 Version:	0.5b
 Release:	1
@@ -28,9 +28,9 @@ dropping bad frames.
 
 %description -l pl
 MPlayerThumbs jest programem generuj±cym miniatury dla plików video w
-Konquerorze. W przeciwieñstwie do oryginalnego pluginu, zamiast xine i
-arts u¿ywa tylko mplayera. Mo¿esz poczuæ korzy¶æ u¿ywaj±c tego na
-systemach x86_64, na których mo¿esz u¿ywaæ 32-bitowego mplayera wraz z
+Konquerorze. W przeciwieñstwie do oryginalnej wtyczki, zamiast xine i
+arts u¿ywa tylko mplayera. Mo¿na poczuæ korzy¶æ u¿ywaj±c tego na
+systemach x86_64, na których mo¿na u¿ywaæ 32-bitowego mplayera wraz z
 win32codecs. Aby skonfigurowaæ po³o¿enie mplayera wystarczy za³adowaæ
 program mplayerthumbsconfig. Program ten jest tak¿e szybszy ni¿
 wtyczka xine, poniewa¿ przeszukiwanie i odgrywanie odbywa siê na
@@ -55,16 +55,17 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir=%{_kdedocdir}
 
+%find_lang videopreview --with-kde
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f videopreview.lang
 %defattr(644,root,root,755)
 %doc README AUTHORS ChangeLog TODO
 %attr(755,root,root) %{_bindir}/mplayerthumbsconfig
 %attr(755,root,root) %{_libdir}/kde3/videopreview.so
 %{_libdir}/kde3/videopreview.la
-%{_datadir}/apps/videothumbnail/*
+%{_datadir}/apps/videothumbnail
 %{_datadir}/services/videopreview.desktop
 %{_datadir}/config.kcfg/mplayerthumbs.kcfg
-%lang(en) %{_kdedocdir}/en/videopreview/index.*
