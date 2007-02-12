@@ -1,5 +1,5 @@
 Summary:	MPlayerThumbs - a thumbnail generator for video files on Konqueror
-Summary(pl.UTF-8):   MPlayerThumbs - program generujący miniatury dla plików video w Konquerorze
+Summary(pl.UTF-8):	MPlayerThumbs - program generujący miniatury dla plików video w Konquerorze
 Name:		kde-mplayerthumbs
 Version:	0.5b
 Release:	1
