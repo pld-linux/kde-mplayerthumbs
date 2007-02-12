@@ -1,5 +1,5 @@
 Summary:	MPlayerThumbs - a thumbnail generator for video files on Konqueror
-Summary(pl):	MPlayerThumbs - program generuj±cy miniatury dla plików video w Konquerorze
+Summary(pl.UTF-8):   MPlayerThumbs - program generujÄ…cy miniatury dla plikÃ³w video w Konquerorze
 Name:		kde-mplayerthumbs
 Version:	0.5b
 Release:	1
@@ -26,16 +26,16 @@ can seek and play only a limited number of frames. It catches a random
 frame from 15% to 70%, checking also how contrasted is the image, and
 dropping bad frames.
 
-%description -l pl
-MPlayerThumbs jest programem generuj±cym miniatury dla plików video w
-Konquerorze. W przeciwieñstwie do oryginalnej wtyczki, zamiast xine i
-arts u¿ywa tylko mplayera. Mo¿na poczuæ korzy¶æ u¿ywaj±c tego na
-systemach x86_64, na których mo¿na u¿ywaæ 32-bitowego mplayera wraz z
-win32codecs. Aby skonfigurowaæ po³o¿enie mplayera wystarczy za³adowaæ
-program mplayerthumbsconfig. Program ten jest tak¿e szybszy ni¿
-wtyczka xine, poniewa¿ przeszukiwanie i odgrywanie odbywa siê na
-ograniczonej liczbie ramek. MPlayerThumbs pobiera losow± klatkê z 15%
-do 70% pliku video, sprawdzaj±c kontrast obrazka i pozbywaj±c siê
+%description -l pl.UTF-8
+MPlayerThumbs jest programem generujÄ…cym miniatury dla plikÃ³w video w
+Konquerorze. W przeciwieÅ„stwie do oryginalnej wtyczki, zamiast xine i
+arts uÅ¼ywa tylko mplayera. MoÅ¼na poczuÄ‡ korzyÅ›Ä‡ uÅ¼ywajÄ…c tego na
+systemach x86_64, na ktÃ³rych moÅ¼na uÅ¼ywaÄ‡ 32-bitowego mplayera wraz z
+win32codecs. Aby skonfigurowaÄ‡ poÅ‚oÅ¼enie mplayera wystarczy zaÅ‚adowaÄ‡
+program mplayerthumbsconfig. Program ten jest takÅ¼e szybszy niÅ¼
+wtyczka xine, poniewaÅ¼ przeszukiwanie i odgrywanie odbywa siÄ™ na
+ograniczonej liczbie ramek. MPlayerThumbs pobiera losowÄ… klatkÄ™ z 15%
+do 70% pliku video, sprawdzajÄ…c kontrast obrazka i pozbywajÄ…c siÄ™
 niepoprawnych klatek.
 
 %prep
